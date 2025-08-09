@@ -34,7 +34,7 @@ namespace WinFormsApp1
             int sayi1 = int.Parse(textBox1.Text);
             int sayi2 = int.Parse(textBox2.Text);
             int carpim = sayi1 * sayi2;
-            label1.Text = "Çarpým: " + carpim.ToString();
+            label1.Text = "Ã‡arpÄ±m: " + carpim.ToString();
             label1.ForeColor = System.Drawing.Color.Green;
             Gecmis.Items.Add(sayi1 + " * " + sayi2 + " = " + carpim);
         }
@@ -46,14 +46,14 @@ namespace WinFormsApp1
             if (sayi2 != 0)
             {
                 double bolum = (double)sayi1 / sayi2;
-                label1.Text = "Bölüm: " + bolum.ToString();
+                label1.Text = "BÃ¶lÃ¼m: " + bolum.ToString();
                 label1.ForeColor = System.Drawing.Color.Purple;
                 Gecmis.Items.Add(sayi1 + " / " + sayi2 + " = " + bolum);
 
             }
             else
             {
-                label1.Text = "Bölme hatasý: Sýfýra bölünemez!";
+                label1.Text = "BÃ¶lme hatasÄ±: SÄ±fÄ±ra bÃ¶lÃ¼nemez!";
                 label1.ForeColor = System.Drawing.Color.Black;
             }
         }
@@ -77,7 +77,7 @@ namespace WinFormsApp1
 
         private void button6_Click(object sender, EventArgs e)
         {
-            label1.Text = "Sonuç: ";
+            label1.Text = "SonuÃ§: ";
             label1.ForeColor = System.Drawing.Color.Black;
             textBox1.Clear();
             textBox2.Clear();
@@ -88,7 +88,7 @@ namespace WinFormsApp1
             Gecmis.Items.Clear();
             textBox1.Clear();
             textBox2.Clear();
-            label1.Text = "Sonuç: ";
+            label1.Text = "SonuÃ§: ";
             label1.ForeColor = System.Drawing.Color.Black;
             string filePath = "sonuclar.txt";
             if (File.Exists(filePath))
